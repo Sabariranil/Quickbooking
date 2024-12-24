@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title></title>
+</head>
+<style>
+    body{
+  background-color:rgb(247, 243, 243);
+}
+.navbar {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+                font-size: 2rem; 
+                font-family:fantasy;
+            }
+            .nav-link{
+   font-size: large;
+   font-weight: bold;
+  }
+  .nav-link:hover{
+    color: orange;
+  }
+    .image-container {
+    display: flex;
+         }
+         .sign{
+text-decoration: none;
+color: white;
+}
+a{
+text-decoration: none;
+color: black;
+}
+.carousel-item img {
+            height: 400px; 
+            object-fit: cover; 
+        }
+        .carousel {
+            max-width: 800px; 
+            margin: auto; 
+        }
+        .booking{
+            max-width: 1180px; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+      .park{
+        margin-left: 30px;
+        
+      }
+      .star{
+        margin-left: 20px;
+      }
+      .table-custom th {
+            background-color: #007bff;
+            color: white;
+        }
+        footer {
+  background-color:rgb(61, 61, 61);
+  color:white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color:white;
+}
+
+.footer-section p {
+  font-size: 14px;
+ 
+}
+
+
+p a {
+  color:white;
+  text-decoration: none;
+}
+p a:hover{
+   text-decoration:underline;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color:rgb(41, 40, 40);
+  font-size: 14px;
+}
+        .room:hover{
+            background-color:rgb(213, 252, 252);
+        }
+        input:hover{
+            box-shadow: black;
+        }
+        h3{
+            font-family: 'Times New Roman', Times, serif;
+        }
+       
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">QuickBooking</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#booknow">Book Now</a>
+              </li>
+              <li class="nav-item">
+                <h5>
+                    <a class="btn btn-danger" href="login.html">
+                        <span class="sign">Login</span>
+                    </a>
+                </h5>
+            </li>&nbsp;
+              <li class="nav-item">
+                <h5>
+                    <a class="btn btn-primary" href="sign up.html">
+                        <span class="sign">Sign Up</span>
+                    </a>
+                </h5>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav><br><br><br>
+
+        <div class="star">
+        <h2 class="fw-bold">Ginger Mumbai airport</h2>
+        <img src="image/star.png" alt="" height="20px" width="20px" />
+        <img src="image/star.png" alt="" height="20px" width="20px" />
+        <img src="image/star.png" alt="" height="20px" width="20px" />
+        <img src="image/star.png" alt="" height="20px" width="20px" />
+        <p >Mumbai,India <br id="gallery"><i class="fa-solid fa-location-dot"></i> Nehru Road, Plot no 10&11, Western Express Hwy, Navpada, Vile Parle East, Mumbai 400099</p>
+        
+    </div>
+        <br><br>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/ginger1.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="image/ginger2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="image/ginger3.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="image/ginger4.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="image/ginger5.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div><br>
+    <div class="container mt-5">
+        <h2 class="text-center"style="font-family: 'Times New Roman', Times, serif;">Room Rates</h2><br>
+        <table class="table table-bordered table-custom">
+            
+                <tr class="room">
+                    <th>Room Type</th>
+                    <th>Price per Night</th>
+                    <th>Amenities</th>
+                    <th>Availability</th>
+                </tr>
+                <tr>
+                    <td>Smart Room</td>
+                    <td>₹3,500</td>
+                    <td>Free WiFi, AC, TV</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Standard Room</td>
+                    <td>₹4,500</td>
+                    <td>Free WiFi, AC, TV, Mini Fridge</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Deluxe Room</td>
+                    <td>₹5,500</td>
+                    <td>Free WiFi, AC, TV, Coffee Maker</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Suite</td>
+                    <td>₹7,500</td>
+                    <td>Free WiFi, AC, TV, Lounge Access</td>
+                    <td>Available</td>
+                </tr>
+        </table>
+    </div><br id="booknow"><br><br>
+    <h2 class="text-center"style="font-family: 'Times New Roman', Times, serif;">Room Booking</h2>
+    <div class="container mt-5">
+        
+        <form>
+            <div class="booking"style="background-image: url(image/home.jpg);background-size: cover;">
+            <div class=" row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="fw-bold" for="name" style="color: white;">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="fw-bold" for="email" style="color: white;">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="fw-bold" for="checkin" style="color: white;">Check-in</label>
+                        <input type="date" class="form-control" id="checkin" required>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="fw-bold"for="checkout" style="color: white;">Check-out</label>
+                        <input type="date" class="form-control" id="checkout" required>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="fw-bold" for="roomType" style="color: white;">Room Type</label>
+                        <select class="form-control" id="roomType" required>
+                            <option value="">Select</option>
+                            <option value="smart ">Smart</option>
+                            <option value="standard">Standard</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="fw-bold" for="specialRequests" style="color: white;">Special Requests</label>
+                <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any special requests"></textarea>
+            </div><br>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </div>
+</div> <br>
+<div class="park">
+    <h3>Accommodations</h3>
+    <li><b>Room Types</b></li>
+    <ul>
+        <li>Smart Room: Compact and functional with essential amenities.</li>
+        <li>Deluxe Room: More spacious with added comfort features.
+        </li>
+    </ul>
+    <li><b>Amenities</b></li>
+    <ul>
+        <li>Free WiFi: Available throughout the hotel.</li>
+        <li>Dining</li>
+        <ul>
+        <li>Café: On-site dining offering a range of local and international dishes.</li>
+        </ul>
+        <li>Fitness Center: Basic gym facilities for workouts.</li>
+        <li>Meeting Rooms: Facilities available for small meetings and events</li>
+    </ul>
+</div>
+
+<div  class="park">
+    <h3>Services</h3>
+    <ul>
+        <li>24-Hour Front Desk: Assistance available around the clock.</li>
+        <li>Room Service: In-room dining options</li>
+        <li>Laundry Services: Available upon request.</li>
+        <li>Airport Shuttle: Convenient transport options to and from the airport.</li>
+        <li>Parking: On-site parking for guests.</li>
+</ul>
+</div>
+<div  class="park">
+    <h3>Nearby Attractions</h3>
+    <ul>
+        <li>Shopping Malls: Close to major shopping destinations. </li>
+        <li>Business Hubs: Easy access to corporate offices and IT parks.</li>
+        <li>Local Attractions: Nearby cultural and recreational sites.</li>
+    </ul>
+</div>
+<footer>
+    <div class="footer-container">
+
+     <div class="footer-section">
+      <h4>Popular Hotel Cities</h4>
+      <p><a href="#">Hotel in Chennai</a></p>
+      <p><a href="#">Hotel in Mumbai</a></p>
+      <p><a href="#">Hotel in Goa</a></p>
+      <p><a href="#">Hotel in Hyderabad</a></p>
+      <p><a href="#">Hotel in Munnar</a></p>
+      <p><a href="#">Hotel in Manali</a></p>
+    </div>
+      <div class="footer-section">
+        <h4>Popular Hotels</h4>
+        <p><a href="#">Four Seasons Hotel Mumbai</a></p>
+        <p><a href="#">The Imperial New Delhi</a></p>
+        <p><a href="#">Trident Hotel Chennai</a></p>
+        <p><a href="#">Vivanta Bengaluru</a></p>
+        <p><a href="#">The St. Regis Goa Resort</a></p>
+        <p><a href="#">Gokulam Park Hotel Kochin</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>About QuickBooking</h4>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Privacy</a></p>
+        <p><a href="#">Customer Support</a></p>
+        <p><a href="#">Technology@QuickBooking</a></p>
+        <p><a href="#">FaQs</a></p>
+      </div>
+  
+     <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="">Twiter</a></p>
+     </div>
+   
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 QuickBooking. All Rights Reserved.</p>
+    </div>
+  </footer>
+    </body>
+    </html>
+    
+</body>
+</html>
